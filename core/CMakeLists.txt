@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 3.10)
 add_library(openhil_core
     src/signals/signal_set.cpp
     src/plant/plant.cpp
+    src/solvers/euler_solver.cpp
+    src/solvers/rk4_solver.cpp
 )
 
 # Definišemo include putanje (tako da fajlovi vide <openhil/signals/signal.hpp>)
