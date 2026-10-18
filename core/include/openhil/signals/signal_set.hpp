@@ -13,6 +13,13 @@ namespace openhil::signals {
     public:
         SignalSet() = default;
 
+        // Construct from initializer list of Signals
+        SignalSet(std::initializer_list<Signal> list) {
+            for (const auto& s : list) {
+                add(s);
+            }
+        }
+
         // Dodaje novi signal ili prepisuje postojeći
         void add(const Signal& signal) {
             signals_[signal.name] = signal;

@@ -5,6 +5,8 @@ add_library(openhil_core
     src/plant/plant.cpp
     src/solvers/euler_solver.cpp
     src/solvers/rk4_solver.cpp
+    src/plant/DCMotorPlant.cpp
+    src/scheduler/scheduler.cpp
 )
 
 # Definišemo include putanje (tako da fajlovi vide <openhil/signals/signal.hpp>)
